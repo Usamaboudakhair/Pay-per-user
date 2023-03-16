@@ -1,0 +1,99 @@
+
+
+<html>
+    <head>
+        <title>Pay Per User</title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class="col-inner text-center">
+            <h1 style="font-size: 50px; line-height: 51px; text-align: center;">Pay per user. Simple.</h1>
+            <p style="font-size: 18px;  line-height: 30px; text-align: center;">No setup fees or hidden costs. Pause billing or cancel at anytime.</p>
+	</div>
+<center>
+<p style="font-size: 50px; color: #055eff;"><span id="userCount">1</span> users</p><br>
+<div class="range">
+    <div class="field">
+        <input type="range" id="range" style="cursor:pointer ; width:35%" min="1" max="1001" value="1" steps="1">
+    </div>
+</div>
+<br>
+<!---
+<p><button id="m" class="intervalBtn active" style="background:none;border:none;font-size:20px;font-weight:bold;cursor:pointer" data-interval="month">Monthly billing</button>&nbsp;
+<i id="toggle" class="fa fa-toggle-on fa-flip-horizontal" style="font-size:40px; line-height: 35px; color: #055eff; vertical-align: -3px;" ></i>
+&nbsp;<button  id="y" class="intervalBtn" style="background:none;border:none;font-size:20px;cursor:pointer;font-weight:bold;" data-interval="year">Annual billing</button></p>--->
+ <p id="messagediscount" style="color:#055eff ;" >You'll get a <span id="discount" style="font-weight:bold;">0</span>% <span style="color:black">volume discount</span> 🎉</p>   
+ <br>
+ <div class="select"><select id="currency"><option value="gbp">GBP</option><option value="eur">EUR</option><option value="usd">USD</option></select></div>
+ <br><br> 
+<div class="snip1214">
+  <div class="plan" id="plan1">
+    <h3 class="plan-title" style="background-color: #4cb863;">
+      Starter
+    </h3>
+    <div class="plan-cost" id="cost"><span class="currencylogo" id="currencylogo1">£</span><span class="plan-price" id="cur1">1.00</span><span id="plan-type1" class="plan-type">/Mo</span></div>
+    <ul class="plan-features">
+        <li><i class="ion-checkmark"> </i><p class="plan-price" style="font-size:18px">Starter includes:</p>
+        <p class="plan-price" style="font-size:15px;opacity:0.8">10 Custom courses <br> Multiple properties<br> Tracking and reporting<br> Quizzes<br> </p>
+        </li>
+        <div class="plan-select"><a href="">Try for free</a></div>
+    </ul>
+  </div>
+  <div class="plan" id="plan2">
+    <h3 class="plan-title" style="background-color: #885cd8;">
+    Essential
+    </h3>
+    <div class="plan-cost" id="cost" ><span class="currencylogo" id="currencylogo2">£</span><span class="plan-price" id="cur2">2.00</span><span id="plan-type2" class="plan-type">/Mo</span></div>
+    <ul class="plan-features">
+        <li><i class="ion-checkmark"> </i><p class="plan-price" style="font-size:18px">Enterprise includes:</p>
+        <p class="plan-price" style="font-size:15px;opacity:0.8">Enterprise includes <br> Account Manager <br> Onboarding<br> Dedicated support<br> Service Level Agreement<br> Custom domain<br> Custom features<br> + everything in Pro</p>
+        </li>
+        <div class="plan-select"><a href="">Try for free</a></div>
+    </ul>
+  </div>
+  <div class="plan" id="plan3">
+    <h3 class="plan-title" style="background-color: #885cd8;">
+      Professional
+    </h3>
+    <div class="plan-cost" id="cost"><span class="currencylogo" id="currencylogo3">£</span><span class="plan-price" id="cur3">4.00</span><span id="plan-type3" class="plan-type">/Mo</span></div>
+    <ul class="plan-features">
+        <li><i class="ion-checkmark"> </i><p class="plan-price" style="font-size:18px">Enterprise includes:</p>
+        <p class="plan-price" style="font-size:15px;opacity:0.8">Enterprise includes <br> Account Manager <br> Onboarding<br> Dedicated support<br> Service Level Agreement<br> Custom domain<br> Custom features<br> + everything in Pro</p>
+        </li>
+        <div class="plan-select"><a href="">Try for free</a></div>
+    </ul>
+    
+  </div>
+  <div class="plan">
+    <h3 class="plan-title" style="background-color:#f14566;">
+    Enterprise
+    </h3>
+    <div class="plan-cost"><span class="plan-price" style="font-size:15px">Custom pricing and features </span></div>
+    <ul class="plan-features">
+        <li><i class="ion-checkmark"> </i><p class="plan-price"style="font-size:18px">Enterprise includes:</p>
+        <p class="plan-price"style="font-size:15px;opacity:0.8">Enterprise includes <br> Account Manager <br> Onboarding<br> Dedicated support<br> Service Level Agreement<br> Custom domain<br> Custom features<br> + everything in Pro</p>
+        </li>
+        <div class="plan-select2" ><a href="">Contact us</a></div>
+    </ul>
+    </div>
+    
+  </div>
+</div>
+<span hidden id="hidecur" type="text">gbp</span>
+<input hidden id="moneysart" type="text" >
+<input hidden id="moneybasic" type="text" >
+<input hidden id="moneypro" type="text" >
+<style ></style>
+
+	</center>
+  <script src="script.js"></script>
+    </body>
+</html>
+
+<?php
+   
+?>
